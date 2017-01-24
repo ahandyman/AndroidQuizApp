@@ -15,8 +15,8 @@
     <string name="question_five"> (       5       )</string>
 
     <!-- MULTIPLE CHOICE-->
-    <string name="question_six">6. Which of the following are used to make comments</string>
-    <string name="question_seven">7. Which of the following are legal class names</string>
+    <string name="question_six">6. Select legal comments</string>
+    <string name="question_seven">7. Select legal class names</string>
     <string name="question_eight">8. Unit of length for specifying the size of a font of type</string>
     <string name="question_nine">9. CamelCase begins with a capital letter</string>
     <string name="question_ten">10. HexColor: Red </string>

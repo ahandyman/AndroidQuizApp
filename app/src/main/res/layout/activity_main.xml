@@ -24,15 +24,15 @@
             android:fontFamily="cursive"
             android:gravity="center_horizontal"
             android:text="@string/title"
-            android:textSize="32sp" />
+            android:textSize="48sp" />
 
 
         <TextView
+            android:id="@+id/textView2"
+            style="@android:style/TextAppearance.Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/instructions_two"
-            android:textSize="12sp"
-            android:id="@+id/textView2" />
+            android:text="@string/instructions_two" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -137,12 +137,12 @@
         <!-- QUESTION 6 -->
         <TextView
             android:id="@+id/question_six"
+            style="@android:style/TextAppearance.Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="@string/question_six"
-            android:textSize="12sp" />
+            android:text="@string/question_six" />
 
         <CheckBox
             android:id="@+id/incorrect_answer_six_1"
@@ -179,12 +179,12 @@
         <!-- QUESTION 7 -->
         <TextView
             android:id="@+id/question_seven"
+            style="@android:style/TextAppearance.Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
-            android:text="@string/question_seven"
-            android:textSize="12sp" />
+            android:text="@string/question_seven" />
 
         <CheckBox
             android:id="@+id/incorrect_answer_seven_1"
@@ -221,17 +221,17 @@
         <!-- QUESTION 8 -->
         <TextView
             android:id="@+id/question_eight"
+            style="@android:style/TextAppearance.Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
             android:text="@string/question_eight" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            >
+            android:layout_marginBottom="16dp">
 
             <RadioButton
                 android:id="@+id/correct_answer_eight"
@@ -251,6 +251,7 @@
         <!-- QUESTION 9 -->
         <TextView
             android:id="@+id/question_nine"
+            style="@android:style/TextAppearance.Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -259,8 +260,7 @@
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            >
+            android:layout_marginBottom="16dp">
 
             <RadioButton
                 android:layout_width="match_parent"
@@ -280,16 +280,16 @@
         <!-- QUESTION 10 -->
         <TextView
             android:id="@+id/question_ten"
-            android:layout_marginBottom="16dp"
+            style="@android:style/TextAppearance.Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:text="@string/question_ten" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            >
+            android:layout_marginBottom="16dp">
 
             <RadioButton
                 android:id="@+id/correct_answer_ten"
@@ -314,6 +314,7 @@
         <!-- QUESTION 11 -->
         <TextView
             android:id="@+id/question_eleven"
+            style="@android:style/TextAppearance.Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -322,8 +323,7 @@
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            >
+            android:layout_marginBottom="16dp">
 
             <RadioButton
                 android:id="@+id/correct_answer_eleven"
@@ -348,16 +348,16 @@
         <!-- QUESTION 12 -->
         <TextView
             android:id="@+id/question_twelve"
-            android:layout_marginBottom="16dp"
+            style="@android:style/TextAppearance.Medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:text="@string/question_twelve" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            >
+            android:layout_marginBottom="16dp">
 
             <RadioButton
                 android:id="@+id/correct_answer_twelve"
