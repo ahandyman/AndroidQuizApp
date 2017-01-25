@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">Android Quiz App</string>
-    <string name="title">Android Quiz</string>
+    <string name="app_name">Android Quiz</string>
+    <string name="title"><b>Android Quiz</b></string>
 
     <string name="wrong">incorrect</string>
 
     <!-- INSTRUCTIONS -->
-    <string name="instructions_two">Fill in the blanks for 1. through 5. </string>
+    <string name="instructions_two">Fill in the blanks: </string>
 
     <!-- FILL IN THE BLANKS ENTRIES-->
     <string name="question_one"> (       1       )</string>
@@ -17,7 +17,7 @@
     <!-- MULTIPLE CHOICE-->
     <string name="question_six">6. Select legal comments</string>
     <string name="question_seven">7. Select legal class names</string>
-    <string name="question_eight">8. Unit of length for specifying the size of a font of type</string>
+    <string name="question_eight">8. Unit of measurement for font size</string>
     <string name="question_nine">9. CamelCase begins with a capital letter</string>
     <string name="question_ten">10. HexColor: Red </string>
     <string name="question_eleven">11. HexColor: White </string>
@@ -31,19 +31,20 @@
     <string name="helloWorld"> = \"Hello World!\"</string>
 
 
-
     <!-- MULTIPLE CHOICE COMMENT OPTIONS-->
     <string name="comments_1"> // </string>
     <string name="comments_2">&lt;!-- --&gt;</string>
     <string name="comments_3"> /**  */</string>
-    
+
     <string name="legalClassName">TextView</string>
     <string name="illegalClassName1">TEXTVIEW</string>
     <string name="illegalClassName2">text_view</string>
 
     <string name="allOfTheAbove">All of the Above</string>
+
     <!-- BUTTON -->
     <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
 
 
     <!-- CHOICES-->
@@ -64,7 +65,7 @@
     <string name="trueAnswer">True</string>
     <string name="falseAnswer">False</string>
 
-<!-- A PLACEHOLDER FOR RESULTS -->
+    <!-- A PLACEHOLDER FOR RESULTS -->
     <string name="results">Results</string>
 
 </resources>

@@ -245,23 +245,18 @@ public class MainActivity extends AppCompatActivity {
             question_twelve_answer = "Incorrect";
         }
 
-        Toast.makeText(this, "You scored " + totalCorrect + "out of 12", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "You scored " + totalCorrect + " out of 12", Toast.LENGTH_SHORT).show();
         String grade = quizResultSummary(question_one_answer, question_two_answer, question_three_answer, question_four_answer, question_five_answer, question_six_answer, question_seven_answer, question_eight_answer, question_nine_answer, question_ten_answer, question_eleven_answer, question_twelve_answer);
         displayQuizResults(grade);
-
-
-    }
-  /**
-    private int finalTestResults(int testScore) {
-        return testScore;
+        totalCorrect = 0;
     }
 
-    public void displayScore(int score) {
-        TextView numberScore = (TextView) findViewById(R.id.score);
-        numberScore.setText(score);
-    }
-*/
     public void displayQuizResults(String ans) {
+        TextView results = (TextView) findViewById(R.id.resultSummary);
+        results.setText(ans);
+    }
+
+    public void retake(String ans) {
         TextView results = (TextView) findViewById(R.id.resultSummary);
         results.setText(ans);
     }
