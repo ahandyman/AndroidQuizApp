@@ -20,7 +20,7 @@
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="32dp"
             android:fontFamily="cursive"
             android:gravity="center_horizontal"
             android:text="@string/title"
@@ -29,9 +29,7 @@
 
         <TextView
             android:id="@+id/textView2"
-            style="@android:style/TextAppearance.Medium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/QuestionTitleStyle"
             android:text="@string/instructions_two" />
 
         <LinearLayout
@@ -137,142 +135,93 @@
         <!-- QUESTION 6 -->
         <TextView
             android:id="@+id/question_six"
-            style="@android:style/TextAppearance.Medium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
+            style="@style/QuestionTitleStyle"
             android:text="@string/question_six" />
 
         <CheckBox
             android:id="@+id/incorrect_answer_six_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="@string/comments_1"
-            android:textSize="16sp" />
+            style="@style/AnswerStyle"
+            android:text="@string/comments_1" />
 
         <CheckBox
             android:id="@+id/incorrect_answer_six_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="@string/comments_2"
-            android:textSize="16sp" />
+            style="@style/AnswerStyle"
+            android:text="@string/comments_2" />
 
         <CheckBox
             android:id="@+id/incorrect_answer_six_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="@string/comments_3"
-            android:textSize="16sp" />
+            style="@style/AnswerStyle"
+            android:text="@string/comments_3" />
 
         <CheckBox
             android:id="@+id/correct_answer_six"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="@string/allOfTheAbove"
-            android:textSize="16sp" />
+            style="@style/AnswerStyle"
+            android:text="@string/allOfTheAbove" />
 
         <!-- QUESTION 7 -->
         <TextView
             android:id="@+id/question_seven"
-            style="@android:style/TextAppearance.Medium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
+            style="@style/QuestionTitleStyle"
             android:text="@string/question_seven" />
 
         <CheckBox
             android:id="@+id/incorrect_answer_seven_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="@string/illegalClassName1"
-            android:textSize="16sp" />
+            style="@style/AnswerStyle"
+            android:text="@string/illegalClassName1" />
 
         <CheckBox
             android:id="@+id/correct_answer_seven"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="@string/legalClassName"
-            android:textSize="16sp" />
+            style="@style/AnswerStyle"
+            android:text="@string/legalClassName" />
 
         <CheckBox
             android:id="@+id/incorrect_answer_seven_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="@string/illegalClassName2"
-            android:textSize="16sp" />
+            style="@style/AnswerStyle"
+            android:text="@string/illegalClassName2" />
 
         <CheckBox
             android:id="@+id/incorrect_answer_seven_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
-            android:text="@string/allOfTheAbove"
-            android:textSize="16sp" />
+            style="@style/AnswerStyle"
+            android:text="@string/allOfTheAbove" />
 
         <!-- QUESTION 8 -->
         <TextView
             android:id="@+id/question_eight"
-            style="@android:style/TextAppearance.Medium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
+            style="@style/QuestionTitleStyle"
             android:text="@string/question_eight" />
 
         <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
+            android:layout_height="wrap_content">
+
 
             <RadioButton
                 android:id="@+id/correct_answer_eight"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="24dp"
+                style="@style/AnswerStyle"
                 android:text="@string/sp" />
 
             <RadioButton
-
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="24dp"
+                style="@style/AnswerStyle"
                 android:text="@string/dp" />
         </RadioGroup>
 
         <!-- QUESTION 9 -->
         <TextView
             android:id="@+id/question_nine"
-            style="@android:style/TextAppearance.Medium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            style="@style/QuestionTitleStyle"
             android:text="@string/question_nine" />
 
         <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
+            android:layout_height="wrap_content">
 
             <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="24dp"
+                style="@style/AnswerStyle"
                 android:text="@string/trueAnswer" />
 
             <RadioButton
                 android:id="@+id/correct_answer_nine"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="24dp"
+                style="@style/AnswerStyle"
                 android:text="@string/falseAnswer" />
 
         </RadioGroup>
@@ -280,103 +229,72 @@
         <!-- QUESTION 10 -->
         <TextView
             android:id="@+id/question_ten"
-            style="@android:style/TextAppearance.Medium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            style="@style/QuestionTitleStyle"
             android:text="@string/question_ten" />
 
         <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
+            android:layout_height="wrap_content">
 
             <RadioButton
                 android:id="@+id/correct_answer_ten"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="24dp"
+                style="@style/AnswerStyle"
                 android:text="@string/red" />
 
             <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="24dp"
+                style="@style/AnswerStyle"
                 android:text="@string/blue" />
 
             <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="24dp"
+                style="@style/AnswerStyle"
                 android:text="@string/black" />
         </RadioGroup>
 
         <!-- QUESTION 11 -->
         <TextView
             android:id="@+id/question_eleven"
-            style="@android:style/TextAppearance.Medium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            style="@style/QuestionTitleStyle"
             android:text="@string/question_eleven" />
 
         <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
+            android:layout_height="wrap_content">
 
             <RadioButton
                 android:id="@+id/correct_answer_eleven"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="24dp"
+                style="@style/AnswerStyle"
                 android:text="@string/white" />
 
             <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="24dp"
+                style="@style/AnswerStyle"
                 android:text="@string/purple" />
 
             <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="24dp"
+                style="@style/AnswerStyle"
                 android:text="@string/blue" />
         </RadioGroup>
 
         <!-- QUESTION 12 -->
         <TextView
             android:id="@+id/question_twelve"
-            style="@android:style/TextAppearance.Medium"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            style="@style/QuestionTitleStyle"
             android:text="@string/question_twelve" />
 
         <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
+            android:layout_height="wrap_content">
 
             <RadioButton
                 android:id="@+id/correct_answer_twelve"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="24dp"
+                style="@style/AnswerStyle"
                 android:text="@string/black" />
 
             <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="24dp"
+                style="@style/AnswerStyle"
                 android:text="@string/yellow" />
 
             <RadioButton
-
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingLeft="24dp"
+                style="@style/AnswerStyle"
                 android:text="@string/purple" />
         </RadioGroup>
 
