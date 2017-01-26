@@ -8,11 +8,11 @@
     <string name="instructions_two">Fill in the blanks: </string>
 
     <!-- FILL IN THE BLANKS ENTRIES-->
-    <string name="question_one"> (       1       )</string>
-    <string name="question_two"> (       2       )</string>
-    <string name="question_three"> (       3       )</string>
-    <string name="question_four"> (       4       )</string>
-    <string name="question_five"> (       5       )</string>
+    <string name="question_one"> ___ </string>
+    <string name="question_two"> ___ </string>
+    <string name="question_three"> ___ </string>
+    <string name="question_four"> ___ </string>
+    <string name="question_five"> ___ </string>
 
     <!-- MULTIPLE CHOICE-->
     <string name="question_six">6. Select legal comments</string>
@@ -24,10 +24,10 @@
     <string name="question_twelve">12. HexColor: Black </string>
 
     <!-- ButtonView QUESTIONS 1-5 -->
-    <string name="buton">Button</string>
-    <string name="layout">:layout_width = \"wrap_content\"</string>
-    <string name="android">android:</string>
-    <string name="wrapContent">= \"wrap_content\"</string>
+    <string name="button"> Button</string>
+    <string name="layout"> :layout_width = \"wrap_content\"</string>
+    <string name="android">android: </string>
+    <string name="wrapContent"> = \"wrap_content\"</string>
     <string name="helloWorld"> = \"Hello World!\"</string>
 
 
@@ -44,7 +44,7 @@
 
     <!-- BUTTON -->
     <string name="submit">Submit</string>
-    <string name="reset">Reset</string>
+    <string name="reset">Retake</string>
 
 
     <!-- CHOICES-->

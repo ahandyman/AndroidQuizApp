@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,14 +34,50 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        EditText lessThan = (EditText) findViewById(R.id.answer_one);
+        lessThan.setBackgroundColor(0);
+        EditText android = (EditText) findViewById(R.id.answer_two);
+        android.setBackgroundColor(0);
+        EditText height = (EditText) findViewById(R.id.answer_three);
+        height.setBackgroundColor(0);
+        EditText text = (EditText) findViewById(R.id.answer_four);
+        text.setBackgroundColor(0);
+        EditText greaterThan = (EditText) findViewById(R.id.answer_five);
+        greaterThan.setBackgroundColor(0);
     }
 
     public void quizResults(View view) {
 
+
+/**
+ *       EDITTEXT
+ *       PROBLEMS 1 - 5
+ */
+        EditText lessThan = (EditText) findViewById(R.id.answer_one);
+        String one_answer = lessThan.getText().toString();
+        Log.v("MainActivity", one_answer);
+
+        EditText android = (EditText) findViewById(R.id.answer_two);
+        String two_answer = android.getText().toString();
+        Log.v("MainActivity", two_answer);
+
+        EditText height = (EditText) findViewById(R.id.answer_three);
+        String three_answer = height.getText().toString();
+        Log.v("MainActivity", three_answer);
+
+        EditText text = (EditText) findViewById(R.id.answer_four);
+        String four_answer = text.getText().toString();
+        Log.v("MainActivity", four_answer);
+
+        EditText greaterThan = (EditText) findViewById(R.id.answer_five);
+        String five_answer = greaterThan.getText().toString();
+        Log.v("MainActivity", five_answer);
+
+
         CheckBox answerSix = (CheckBox) findViewById(R.id.correct_answer_six);
         /**
-         * answerSix1, answerSix2, answerSix3 are created to rule out multiple options selected by user
-         * in case more than one option is selected the if-else case will test incorrect
+         * answerSix1, answerSix2, answerSix3 tested with if-else for 3 correct answer or 1 (all of the above choices)
          */
         CheckBox answerSix1 = (CheckBox) findViewById(R.id.incorrect_answer_six_1);
         CheckBox answerSix2 = (CheckBox) findViewById(R.id.incorrect_answer_six_2);
@@ -79,29 +116,6 @@ public class MainActivity extends AppCompatActivity {
         boolean correct_eleven = answerEleven.isChecked();
         boolean correct_twelve = answerTwelve.isChecked();
 
-/**
- *       EDITTEXT
- *       RETURNS A STRING
- */
-        EditText lessThan = (EditText) findViewById(R.id.answer_one);
-        String one_answer = lessThan.getText().toString();
-        Log.v("MainActivity", one_answer);
-
-        EditText android = (EditText) findViewById(R.id.answer_two);
-        String two_answer = android.getText().toString();
-        Log.v("MainActivity", two_answer);
-
-        EditText height = (EditText) findViewById(R.id.answer_three);
-        String three_answer = height.getText().toString();
-        Log.v("MainActivity", three_answer);
-
-        EditText text = (EditText) findViewById(R.id.answer_four);
-        String four_answer = text.getText().toString();
-        Log.v("MainActivity", four_answer);
-
-        EditText greaterThan = (EditText) findViewById(R.id.answer_five);
-        String five_answer = greaterThan.getText().toString();
-        Log.v("MainActivity", five_answer);
 
         /**
          * QUESTION ONE
@@ -256,9 +270,72 @@ public class MainActivity extends AppCompatActivity {
         results.setText(ans);
     }
 
-    public void retake(String ans) {
+    /**
+     * Text is set to blank
+     * checkboxes are cleared using a setChecked() and a boolean
+     * clearCheck() DID NOT WORK FOR CHECKBOXES
+     * <p>
+     * RadioGroups were cleared using clearCheck()
+     * <p>
+     * result summary was also set to blank
+     */
+    public void retake(View view) {
+        EditText question1 = (EditText) findViewById(R.id.answer_one);
+        question1.setText("");
+
+        EditText question2 = (EditText) findViewById(R.id.answer_two);
+        question2.setText("");
+
+        EditText question3 = (EditText) findViewById(R.id.answer_three);
+        question3.setText("");
+
+        EditText question4 = (EditText) findViewById(R.id.answer_four);
+        question4.setText("");
+
+        EditText question5 = (EditText) findViewById(R.id.answer_five);
+        question5.setText("");
+
+        CheckBox question6 = (CheckBox) findViewById(R.id.correct_answer_six);
+        question6.setChecked(false);
+
+        CheckBox question6A = (CheckBox) findViewById(R.id.incorrect_answer_six_1);
+        question6A.setChecked(false);
+
+        CheckBox question6B = (CheckBox) findViewById(R.id.incorrect_answer_six_2);
+        question6B.setChecked(false);
+
+        CheckBox question6C = (CheckBox) findViewById(R.id.incorrect_answer_six_3);
+        question6C.setChecked(false);
+
+        CheckBox question7 = (CheckBox) findViewById(R.id.correct_answer_seven);
+        question7.setChecked(false);
+
+        CheckBox question7A = (CheckBox) findViewById(R.id.incorrect_answer_seven_1);
+        question7A.setChecked(false);
+
+        CheckBox question7B = (CheckBox) findViewById(R.id.incorrect_answer_seven_2);
+        question7B.setChecked(false);
+
+        CheckBox question7C = (CheckBox) findViewById(R.id.incorrect_answer_seven_3);
+        question7C.setChecked(false);
+
+        RadioGroup question8 = (RadioGroup) findViewById(R.id.radioGroupQuestion_8);
+        question8.clearCheck();
+
+        RadioGroup question9 = (RadioGroup) findViewById(R.id.radioGroupQuestion_9);
+        question9.clearCheck();
+
+        RadioGroup question10 = (RadioGroup) findViewById(R.id.radioGroupQuestion_10);
+        question10.clearCheck();
+
+        RadioGroup question11 = (RadioGroup) findViewById(R.id.radioGroupQuestion_11);
+        question11.clearCheck();
+
+        RadioGroup question12 = (RadioGroup) findViewById(R.id.radioGroupQuestion_12);
+        question12.clearCheck();
+
         TextView results = (TextView) findViewById(R.id.resultSummary);
-        results.setText(ans);
+        results.setText("");
     }
 
     private String quizResultSummary(String one, String two, String three, String four, String five, String six, String seven, String eight, String nine, String ten, String eleven, String twelve) {
@@ -277,4 +354,6 @@ public class MainActivity extends AppCompatActivity {
         summary += "\n12. " + twelve;
         return summary;
     }
+
+
 }
